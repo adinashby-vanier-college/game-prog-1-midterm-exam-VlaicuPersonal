@@ -15,6 +15,7 @@
             <throws/>
             <body>
                 <call expression="moveAndTurn(1)" expression-java="moveAndTurn(1)" enable="true"/>
+                <call expression="win()" expression-java="win()" enable="true"/>
                 <call expression="eat()" expression-java="eat()" enable="true"/>
             </body>
         </method>
@@ -48,8 +49,20 @@
                 </if>
             </body>
         </method>
-        <comment xml:space="preserve">pig eats all burgers</comment>
         <method access="public" type="void" type-java="void" name="eat" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="isTouching(Burger.class)" condition-java="isTouching(Burger.class)" enable="true">
+                    <ifStatements>
+                        <call expression="removeTouching(Burger.class)" expression-java="removeTouching(Burger.class)" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <comment xml:space="preserve">pig eats all burgers</comment>
+        <method access="public" type="void" type-java="void" name="win" enable="true">
             <javadoc xml:space="preserve"/>
             <params/>
             <throws/>

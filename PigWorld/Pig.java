@@ -15,6 +15,7 @@ public class Pig extends Actor
     public void act()
     {
         moveAndTurn(1);
+        win();
         eat();
     }
 
@@ -39,12 +40,22 @@ public class Pig extends Actor
         }
     }
 
+    /**
+     * 
+     */
+    public void eat()
+    {
+        if (isTouching(Burger.class)) {
+            removeTouching(Burger.class);
+        }
+    }
+
     /* pig eats all burgers*/
 
     /**
      * 
      */
-    public void eat()
+    public void win()
     {
         Actor burger = getOneIntersectingObject(Burger.class);
         if (burger != null) {
