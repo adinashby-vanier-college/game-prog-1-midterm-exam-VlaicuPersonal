@@ -15,8 +15,8 @@
             <throws/>
             <body>
                 <call expression="moveAndTurn(1)" expression-java="moveAndTurn(1)" enable="true"/>
-                <call expression="win()" expression-java="win()" enable="true"/>
                 <call expression="eat()" expression-java="eat()" enable="true"/>
+                <call expression="win()" expression-java="win()" enable="true"/>
             </body>
         </method>
         <comment xml:space="preserve">pig moves only if user wants</comment>

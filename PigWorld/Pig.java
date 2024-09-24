@@ -15,8 +15,8 @@ public class Pig extends Actor
     public void act()
     {
         moveAndTurn(1);
-        win();
         eat();
+        win();
     }
 
     /* pig moves only if user wants*/
