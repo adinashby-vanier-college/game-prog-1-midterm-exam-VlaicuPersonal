@@ -40,6 +40,8 @@ public class Pig extends Actor
         }
     }
 
+    /* eats indiviudual burger*/
+
     /**
      * 
      */
@@ -47,6 +49,7 @@ public class Pig extends Actor
     {
         if (isTouching(Burger.class)) {
             removeTouching(Burger.class);
+            Greenfoot.playSound("eating.wav");
         }
     }
 
