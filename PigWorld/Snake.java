@@ -61,6 +61,8 @@ public class Snake extends Actor
         }
     }
 
+    /* checking if game is over*/
+
     /**
      * 
      */
@@ -74,6 +76,8 @@ public class Snake extends Actor
             return false;
         }
     }
+
+    /* transition to end screen*/
 
     /**
      * 
