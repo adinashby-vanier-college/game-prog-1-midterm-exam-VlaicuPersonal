@@ -9,6 +9,8 @@ import greenfoot.*;
 public class Snake extends Actor
 {
 
+    /* this makes him turn randomly*/
+
     /**
      * 
      */

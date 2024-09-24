@@ -8,6 +8,7 @@
     <implements/>
     <fields/>
     <constructors>
+        <comment xml:space="preserve">this makes him turn randomly</comment>
         <constructor access="public" enable="true">
             <javadoc xml:space="preserve"/>
             <params/>

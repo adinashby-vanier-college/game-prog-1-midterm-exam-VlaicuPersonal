@@ -39,7 +39,7 @@ public class Pig extends Actor
         }
     }
 
-    /* pig eats the burgers*/
+    /* pig eats all burgers*/
 
     /**
      * 
@@ -50,7 +50,7 @@ public class Pig extends Actor
         if (burger != null) {
             World world = getWorld();
             world.removeObject(burger);
-            Greenfoot.playSound("eating.wav");
+            Greenfoot.playSound("win.wav");
         }
     }
 }

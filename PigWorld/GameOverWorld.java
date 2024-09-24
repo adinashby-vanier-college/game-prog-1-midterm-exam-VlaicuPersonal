@@ -18,6 +18,8 @@ public class GameOverWorld extends World
         showText("game over", 180, 200);
     }
 
+    /* is supposed to create the text*/
+
     /**
      * 
      */

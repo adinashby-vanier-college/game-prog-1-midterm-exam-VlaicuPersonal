@@ -19,6 +19,7 @@
         </constructor>
     </constructors>
     <methods>
+        <comment xml:space="preserve">is supposed to create the text</comment>
         <method access="public" type="void" type-java="void" name="showText" enable="true">
             <javadoc xml:space="preserve"/>
             <params>

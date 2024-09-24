@@ -48,7 +48,7 @@
                 </if>
             </body>
         </method>
-        <comment xml:space="preserve">pig eats the burgers</comment>
+        <comment xml:space="preserve">pig eats all burgers</comment>
         <method access="public" type="void" type-java="void" name="eat" enable="true">
             <javadoc xml:space="preserve"/>
             <params/>
@@ -59,7 +59,7 @@
                     <ifStatements>
                         <variable type="World" type-java="World" name="world" value="getWorld()" value-java="getWorld()" enable="true"/>
                         <call expression="world.removeObject(burger)" expression-java="world.removeObject(burger)" enable="true"/>
-                        <call expression="Greenfoot.playSound(&quot;eating.wav&quot;)" expression-java="Greenfoot.playSound(&quot;eating.wav&quot;)" enable="true"/>
+                        <call expression="Greenfoot.playSound(&quot;win.wav&quot;)" expression-java="Greenfoot.playSound(&quot;win.wav&quot;)" enable="true"/>
                     </ifStatements>
                 </if>
             </body>
